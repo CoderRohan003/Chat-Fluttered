@@ -1,5 +1,5 @@
 
-import 'package:chat_app/auth/auth_service.dart';
+import 'package:chat_app/services/auth/auth_service.dart';
 import 'package:chat_app/components/my_button.dart';
 import 'package:chat_app/components/my_text_field.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +61,7 @@ class RegisterPage extends StatelessWidget {
               size: 60,
               color: Theme.of(context).colorScheme.primary,
             ),
-            const SizedBox(height: 50.0),
+            const SizedBox(height: 40.0),
 
             // Welcome back message
             Text(
@@ -71,7 +71,7 @@ class RegisterPage extends StatelessWidget {
                 fontSize: 16,
               ),
             ),
-            const SizedBox(height: 50.0),
+            const SizedBox(height: 40.0),
 
             // Email textfield
             MyTextField(
@@ -79,7 +79,7 @@ class RegisterPage extends StatelessWidget {
               hide: false,
               controller: emailController,
             ),
-            const SizedBox(height: 15.0),
+            const SizedBox(height: 10.0),
 
             // Password textfield
             MyTextField(
@@ -87,7 +87,7 @@ class RegisterPage extends StatelessWidget {
               hide: true,
               controller: passwordController,
             ),
-            const SizedBox(height: 35.0),
+            const SizedBox(height: 30.0),
 
             // Confirm Password textfield
             MyTextField(
@@ -99,7 +99,7 @@ class RegisterPage extends StatelessWidget {
 
             // Register button
             MyButton(text: "Register", onTap: () => register(context)),
-            const SizedBox(height: 35.0),
+            const SizedBox(height: 30.0),
 
             // Register now or login message
             Row(
